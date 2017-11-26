@@ -78,6 +78,15 @@ class Client {
 		if (options.safe) {
 			result.safe = options.safe;
 		}
+		
+		if(options.siteSearch) {
+			result.siteSearch = options.siteSearch;
+		}
+
+
+		if(options.siteSearchFilter) {
+			result.siteSearchFilter = options.siteSearchFilter;
+		}
 
 		return qs.stringify(result);
 	}
