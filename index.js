@@ -87,7 +87,7 @@ class Client {
 		if(options.siteSearchFilter) {
 			result.siteSearchFilter = options.siteSearchFilter;
 		}
-
+		console.log(qs.stringify(result));
 		return qs.stringify(result);
 	}
 }
