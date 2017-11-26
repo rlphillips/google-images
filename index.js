@@ -88,6 +88,11 @@ class Client {
 			result.siteSearchFilter = options.siteSearchFilter;
 		}
 
+
+		if(options.excludeTerms) {
+			result.excludeTerms = options.excludeTerms;
+		}
+
 		return qs.stringify(result);
 	}
 }
